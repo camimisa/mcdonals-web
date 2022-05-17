@@ -1,4 +1,5 @@
 let productos = [
+  // Datos random que encontre la lista por ahi, despues le damos forma
     {
       name: "Santa Monica",
       number: 1995,
