@@ -1,6 +1,7 @@
 import "../../styles.css";
+import { Link } from "react-router-dom";
 
-function ProductCard() {
+function ProductCard(props) {
   /*
     Necesitamos:
         - Nombre del item
@@ -16,24 +17,24 @@ function ProductCard() {
           {/*Product image*/}
           <img
             class="card-img-top"
-            src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+            src={props.producto.imagenCard}
             alt="..."
           />
           {/*Product details*/}
           <div class="card-body p-4">
             <div class="text-center">
               {/*Product name*/}
-              <h5 class="fw-bolder">Nombre Item</h5>
-              {/*Product reviews*/}
+              <h5 class="fw-bolder"><Link to= {`${props.producto.id}`}>{`${props.producto.nombre}`}</Link></h5>
+              {/*Product reviews*
               <div class="d-flex justify-content-center small text-warning mb-2">
                 <div class="bi-star-fill"></div>
                 <div class="bi-star-fill"></div>
                 <div class="bi-star-fill"></div>
                 <div class="bi-star-fill"></div>
                 <div class="bi-star-fill"></div>
-              </div>
+              </div>/}
               {/*Product price*/}
-              $40.00
+              {props.producto.precio}
             </div>
           </div>
           {/*Product actions*/}
