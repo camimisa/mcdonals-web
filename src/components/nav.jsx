@@ -18,8 +18,8 @@ function Nav() {
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><Link  className='dropdown-item' to="/productos">Todos los productos</Link></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><Link  className='dropdown-item' to="/productos-populares">Productos populares</Link></li>
-                                <li><Link  className='dropdown-item' to="/productos-nuevos">Productos nuevos</Link></li>
+                                <li><Link  className='dropdown-item' to="/productos/populares">Productos populares</Link></li>
+                                <li><Link  className='dropdown-item' to="/productos/nuevos">Productos nuevos</Link></li>
                             </ul>
                         </li>
                     </ul>

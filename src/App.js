@@ -64,7 +64,7 @@ function App() {
       <Nav />
       <Header />
       {/* 
-      No anda mover las imagenes
+      TODO: No anda mover las imagenes
       */}
       <Carousel />
 

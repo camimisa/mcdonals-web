@@ -19,8 +19,8 @@ root.render(
       <Route path="locales" element={<Locales />}></Route>
       <Route path="carrito" element={<Carrito />}></Route>
       <Route path="productos" element={<ProductosLista />}></Route>
-      <Route path="productos-populares" element={<ProductosLista />}></Route>
-      <Route path="productos-nuevos" element={<ProductosLista />}></Route>
+      <Route path="productos/populares" element={<ProductosLista />}></Route>
+      <Route path="productos/nuevos" element={<ProductosLista />}></Route>
       <Route path="productos/:id" element={<Producto />}></Route>
       <Route path="*" element={<h1>404</h1>}></Route>
     </Routes>
