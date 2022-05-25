@@ -90,4 +90,88 @@ export const sucursales = [
     latitud: -34.81827338420519,
     longitud: -58.464290431630666
   },
+  {
+    id: 4,
+    nombre: "McDonald's Las Toscas Canning Shopping",
+    direccion: "Mariano Castex S/N",
+    latitud: -34.85472674323456,
+    longitud: -58.50337270270029
+  },
+  {
+    id: 5,
+    nombre: "McDonald's Lomas de Zamora",
+    direccion: "Laprida 177 B1832HOC",
+    latitud: -34.76055282859568,
+    longitud: -58.39920413233275
+  },
+  {
+    id: 6,
+    nombre: "McDonald's COTO Temperley",
+    direccion: "Av. Hipólito Yrigoyen 10699",
+    latitud: -34.78278988583639,
+    longitud: -58.40627930270255
+  },
+  {
+    id: 7,
+    nombre: "McDonald's Av Rivadavia CABA",
+    direccion: "Av. Rivadavia 5730",
+    latitud: -34.62280198293906,
+    longitud: -58.44599226119954
+  },
+  {
+    id: 8,
+    nombre: "McDonald's San Justo",
+    direccion: "Dr. Ignacio Arieta 3474",
+    latitud: -34.68128149922651,
+    longitud: -58.55655604688401
+  },
+  {
+    id: 9,
+    nombre: "McDonald's Lanus",
+    direccion: " Av. Hipólito Yrigoyen 4475",
+    latitud: -34.706310680627034,
+    longitud: -58.39201534503366
+  },
+  {
+    id: 10,
+    nombre: "McDonald's Laferrere",
+    direccion: "Av. Luro 6138",
+    latitud: -34.74967918824661,
+    longitud: -58.585122045032236
+  },
+  {
+    id: 11,
+    nombre: "McDonald's Ramos Mejía",
+    direccion: "Av. Rivadavia 14350",
+    latitud: -34.641608258000446,
+    longitud: -58.56971546037829
+  },
+  {
+    id: 12,
+    nombre: "McDonald's Av Corrientes",
+    direccion: "Av. Corrientes 1650",
+    latitud: -34.60437279540038,
+    longitud: -58.39005610270815
+  },
+  {
+    id: 13,
+    nombre: "McDonald's Av Libertador",
+    direccion: "Av. del Libertador 7112",
+    latitud: -34.547441601674166,
+    longitud: -58.457103258531625
+  },
+  {
+    id: 14,
+    nombre: "McDonald's Vicente Lopez",
+    direccion: "Av. Maipú 1050",
+    latitud: -34.527891007718615,
+    longitud: -58.48105413154632
+  },
+
+
+
+  
+
+
+
 ];
