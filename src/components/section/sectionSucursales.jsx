@@ -17,7 +17,8 @@ var sucursalesMostrar = sucursales;
     <div className="div-section m-3">
       <section className="py-5">
         {/* TODO: ver como hacer que aplique esto style="width: 18rem;" */}
-        <button className="btn btn-outline-dark mb-3" onClick={obtenerUbicacion}>Obtener sucursal mas cercana</button>
+        {/* FIXED: agregado en el boton */}
+        <button className="btn btn-outline-dark mb-3" style={{width: '18rem'}} onClick={obtenerUbicacion}>Obtener sucursal mas cercana</button>
         <div className="card">
           <ul className="list-group list-group-flush">{content}</ul>
         </div>
