@@ -21,7 +21,12 @@ function Product() {
           <div className="row gx-4 gx-lg-5 align-items-center">
             <div className="col-md-6">
               <img
-                className="card-img-top mb-5 mb-md-0"
+                className="card-img mb-5 mb-md-0"
+                style={{
+                  // fix images so it doesnt look pixeled
+                  'margin-left': '3.75rem',
+                  width: '75%'
+                }}
                 src={producto.imagenProducto}
                 alt="..."
               />

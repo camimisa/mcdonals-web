@@ -33,6 +33,10 @@ function ProductCard(props) {
                 <div class="bi-star-fill"></div>
                 <div class="bi-star-fill"></div>
               </div>/}
+
+              {Product description}
+              */
+              /*
               {/*Product price*/}
               {props.producto.precio}
             </div>
