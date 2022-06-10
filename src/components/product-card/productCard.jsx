@@ -44,7 +44,7 @@ function ProductCard(props) {
           {/*Product actions*/}
           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
             <div class="text-center">
-              <Link to= {`${props.producto.id}`} className="btn btn-outline-dark mt-auto">Ver mas</Link>
+              <Link to= {`/productos/${props.producto.id}`} className="btn btn-outline-dark mt-auto">Ver mas</Link>
             </div>
           </div>
         </div>

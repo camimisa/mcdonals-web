@@ -53,11 +53,6 @@ export const agregarProductoCarrito = (producto) => {
     cantidad: 1,
   };
   var carritoActual = JSON.parse(localStorage.getItem("carrito"));
-  let pos = PosicionProducto(carritoActual.listaProductos, producto.id)
-  if(pos !== -1){
-    ModificarCantidadCarrito(producto.idProducto, 1)
-    return true;
-  }
   var carritoNuevo = {};
   if (carritoActual == null) {
     carritoNuevo = {
@@ -65,6 +60,11 @@ export const agregarProductoCarrito = (producto) => {
       total: producto.precio * 1,
     };
   } else {
+    let pos = PosicionProducto(carritoActual.listaProductos, producto.id)
+    if(pos !== -1){
+      ModificarCantidadCarrito(producto.id, 1)
+      return true;
+    }
     carritoActual.listaProductos.push(elemento);
     carritoNuevo = {
       listaProductos: carritoActual.listaProductos,
@@ -74,7 +74,6 @@ export const agregarProductoCarrito = (producto) => {
 
   localStorage.setItem("carrito", JSON.stringify(carritoNuevo));
   return true;
-  //console.log(JSON.parse(localStorage.getItem("carrito")));
 };
 
 export const TraerInfoCarrito = () => {
@@ -106,8 +105,8 @@ export const ModificarCantidadCarrito = (idProducto, sumarORestar) => {
   if (carritoActual == null) {
     return false;
   }
-
   let pos = PosicionProducto(carritoActual.listaProductos, idProducto)
+  let precioAntesDeBorrar = carritoActual.listaProductos[pos].precio
   if (sumarORestar === 1) {
     carritoActual.listaProductos[pos].cantidad++;
   }else {
@@ -121,7 +120,7 @@ export const ModificarCantidadCarrito = (idProducto, sumarORestar) => {
 
   var carritoNuevo = {
     listaProductos: carritoActual.listaProductos,
-    total: carritoActual.total + carritoActual.listaProductos[pos] * sumarORestar,
+    total: carritoActual.total + (precioAntesDeBorrar * sumarORestar),
   };
 
   localStorage.setItem("carrito", JSON.stringify(carritoNuevo));
@@ -131,7 +130,6 @@ export const ModificarCantidadCarrito = (idProducto, sumarORestar) => {
 function PosicionProducto(lista, idProducto) {
   var pos = -1;
   for (var i = 0; i < lista.length; i++) {
-    console.log(i + ' lista[i].idProducto '+ lista[i].idProducto + ' idProducto ' + idProducto)
     if (lista[i].idProducto === idProducto) {
       pos = i;
       i = 1000;
