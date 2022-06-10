@@ -45,6 +45,34 @@ function rad(x) {
   return (x * Math.PI) / 180;
 }
 
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+export const GuardarCompra = (compra) => {
+  var elemento = {
+    idCompra: getRandomArbitrary(1,1000),
+    clienteNombre: compra.cliente,
+    total: compra.total,
+    fecha: compra.fecha,
+    medioDePago: compra.medioDePago,
+  };
+  var compraActual = JSON.parse(localStorage.getItem("compras"));
+  var compraNuevo = {};
+  if (compraActual == null) {
+    compraNuevo = {
+      lista: [elemento],
+    };
+  } else {
+    compraActual.lista.push(elemento);
+    compraNuevo = {
+      lista: compraActual.lista,
+    };
+  }
+  localStorage.setItem("compras", JSON.stringify(compraNuevo));
+  return true;
+};
+
 export const agregarProductoCarrito = (producto) => {
   var elemento = {
     idProducto: producto.id,

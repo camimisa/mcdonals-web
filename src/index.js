@@ -7,6 +7,7 @@ import Carrito from './pages/carrito.jsx';
 import ProductosLista from './pages/productosLista';
 import Producto from './pages/producto';
 import Nosotros from './pages/nosotros.jsx';
+import Compra from './pages/compra.jsx';
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -22,6 +23,7 @@ root.render(
       <Route path="productos/populares" element={<ProductosLista />}></Route>
       <Route path="productos/nuevos" element={<ProductosLista />}></Route>
       <Route path="productos/:id" element={<Producto />}></Route>
+      <Route path="compra" element={<Compra />}></Route>
       <Route path="*" element={<h1>404</h1>}></Route>
     </Routes>
   </BrowserRouter>
