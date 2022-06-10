@@ -24,7 +24,7 @@ function ProductCard(props) {
           <div class="card-body p-4">
             <div class="text-center">
               {/*Product name*/}
-              <h5 class="fw-bolder"><Link to= {`${props.producto.id}`}>{`${props.producto.nombre}`}</Link></h5>
+              <h5 class="fw-bolder">{`${props.producto.nombre}`}</h5>
               {/*Product reviews*
               <div class="d-flex justify-content-center small text-warning mb-2">
                 <div class="bi-star-fill"></div>
@@ -38,15 +38,13 @@ function ProductCard(props) {
               */
               /*
               {/*Product price*/}
-              {props.producto.precio}
+              ${props.producto.precio}
             </div>
           </div>
           {/*Product actions*/}
           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
             <div class="text-center">
-              <a class="btn btn-outline-dark mt-auto" href="#">
-                Add to cart
-              </a>
+              <Link to= {`${props.producto.id}`} className="btn btn-outline-dark mt-auto">Ver mas</Link>
             </div>
           </div>
         </div>
