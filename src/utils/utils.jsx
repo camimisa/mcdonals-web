@@ -84,17 +84,18 @@ export const EliminarProductoCarrito = (id) => {
   var carritoActual = JSON.parse(localStorage.getItem("carrito"));
   if (carritoActual.listaProductos.length === 1) {
     localStorage.removeItem("carrito");
+    return
   }
   let pos = PosicionProducto( carritoActual.listaProductos, id)
-  
+  let precioAntesDeBorrar = carritoActual.listaProductos[pos].precio
+  carritoActual.listaProductos.splice(pos, 1);
+
   var carritoNuevo = {
     listaProductos: carritoActual.listaProductos,
     total:
       carritoActual.total -
-      (carritoActual.listaProductos[pos].precio * carritoActual.listaProductos[pos].cantidad),
+      (precioAntesDeBorrar * carritoActual.listaProductos[pos].cantidad),
   };
-  carritoActual.listaProductos.splice(pos, 1);
-
   localStorage.setItem("carrito", JSON.stringify(carritoNuevo));
   return true;
 };
@@ -113,8 +114,8 @@ export const ModificarCantidadCarrito = (idProducto, sumarORestar) => {
     if (carritoActual.listaProductos[pos].cantidad !== 1) {
       carritoActual.listaProductos[pos].cantidad--;
     } else {
-      // Habia un solo producto, si se disminuye su cantidad se elimina
-      carritoActual.listaProductos.splice(pos, 1);
+      EliminarProductoCarrito(idProducto)
+      return true
     }
   }
 

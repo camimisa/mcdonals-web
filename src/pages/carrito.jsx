@@ -17,7 +17,7 @@ class Carrito extends React.Component {
   }
   render() {
     const objeto = TraerInfoCarrito();
-    const content = objeto.listaProductos.map((item) => (
+    const content = objeto != null ? objeto.listaProductos.map((item) => (
       <tr key={item.idProducto}>
         <td>{item.nombreProducto}</td>
         <td>{item.precio}</td>
@@ -63,8 +63,8 @@ class Carrito extends React.Component {
           </button>
         </td>
       </tr>
-    ));
-    const tablaCarrito = (
+    )) : (<div></div>);
+    const tablaCarrito = objeto != null ?(
       <table className="table">
         <thead className="thead-dark">
           <tr>
@@ -84,7 +84,7 @@ class Carrito extends React.Component {
             </tr>
           </tbody>
       </table>
-    );
+    ) : (<div></div>);
     const carritoVacio = (
       <div>
         <p>Aun no se han agregado productos al carrito</p>
@@ -95,7 +95,7 @@ class Carrito extends React.Component {
       <div className="div-carrito">
         <Nav />
         <div className="container">
-          <div>{objeto.total != null ? tablaCarrito : carritoVacio}</div>
+          <div>{objeto != null ? tablaCarrito : carritoVacio}</div>
         </div>
         <Footer />
       </div>
