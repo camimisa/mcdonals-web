@@ -5,7 +5,7 @@ export const productos = [
     calorias: 289,
     descripcion:
       "Carne 100% vacuna, queso derretido y mostaza, kétchup y cebolla triturada, es algo que nunca puede fallar. Un clásico que nunca pasa de moda.",
-    precio: "$600",
+    precio: 600,
     popular: false,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqX8TYcp/200/200/original?country=ar",
@@ -17,7 +17,7 @@ export const productos = [
     calorias: 505,
     descripcion:
       "Quizás sean las dos hamburguesas de carne 100% vacuna con esa salsa especial y queso derretido, el toque de cebolla y la frescura de la lechuga o el crocante del pepino, lo que la hace la hamburguesa más famosa del mundo. Un sabor único.",
-    precio: "$800",
+    precio: 800,
     popular: true,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqX3vl0y/200/200/original?country=ar",
@@ -29,7 +29,7 @@ export const productos = [
     calorias: 771,
     descripcion:
       "Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.",
-    precio: "$900",
+    precio: 900,
     popular: true,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXt7Sq2/200/200/original?country=ar",
@@ -41,7 +41,7 @@ export const productos = [
     calorias: 513,
     descripcion:
       "En un mundo donde todos buscan lo nuevo todo el tiempo, la McNífica viene a rectificar lo bueno de ser clásico. Carne, queso cheddar, tomate, lechuga y cebolla, acompañados de kétchup, mostaza y mayonesa.",
-    precio: "$600",
+    precio: 600,
     popular: false,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXXaUUP/200/200/original?country=ar",
@@ -53,7 +53,7 @@ export const productos = [
     calorias: 700,
     descripcion:
       "Inigualable pan con semillas de sésamo, tres medallones de carne 100% vacuna, cuatro fetas de nuestro exclusivo Queso Cheddar, cebolla, lechuga y tomate frescos. Sumado a estos ingredientes la única e inigualable Salsa Tasty, un exclusivo sabor McDonald’s",
-    precio: "$800",
+    precio: 800,
     popular: false,
     nuevo: true,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqX093YV/200/200/original?country=ar",
@@ -65,7 +65,7 @@ export const productos = [
     calorias: 272,
     descripcion:
       "Diez piezas del mejor pollo rebozado sólo para vos. Comelas como quieras: con salsas o solas; todas son igual de deliciosas!",
-    precio: "$580",
+    precio: 580,
     popular: true,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXp9cg0/200/200/original?country=ar",
@@ -77,7 +77,7 @@ export const productos = [
     calorias: 339,
     descripcion:
       "Calientes, crujientes y deliciosas, tus aliadas perfectas para cualquier comida. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última.",
-    precio: "$320",
+    precio: 320,
     popular: false,
     nuevo: true,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXXQgnB/200/200/original?country=ar",
@@ -89,7 +89,7 @@ export const productos = [
     calorias: 292,
     descripcion:
       "Nuestro sello. Las aliadas perfectas para cualquier comida. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última. Crujientes y deliciosas, no vas a parar hasta terminarlas todas.",
-    precio: "$300",
+    precio: 300,
     popular: true,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXmVCCk/200/200/original?country=ar",
@@ -101,7 +101,7 @@ export const productos = [
     calorias: 292,
     descripcion:
       "Calientes, crujientes y deliciosas, tus aliadas perfectas para cualquier comida. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última en su versión pequeña.",
-    precio: "$280",
+    precio: 280,
     popular: false,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXUUjwZ/200/200/original?country=ar",
@@ -113,7 +113,7 @@ export const productos = [
     calorias: 292,
     descripcion:
       "Calientes, crujientes y deliciosas, una nueva variedad llega para quedarse: Papas Fritas Cheddar fundido y trocitos de bacon.",
-    precio: "$420",
+    precio: 420,
     popular: false,
     nuevo: true,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXwkfl1/200/200/original?country=ar",
@@ -125,7 +125,7 @@ export const productos = [
     calorias: 269,
     descripcion:
       "Burbujas contra el calor, contra la sed, contra el aburrimiento. Si tus comidas llevan gaseosa, están listas para enfrentar lo que sea, elegila en tamaño regular, mediano o grande.",
-    precio: "$300",
+    precio: 300,
     popular: true,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXJ8TBb/200/200/original?country=ar",
@@ -137,7 +137,7 @@ export const productos = [
     calorias: 0,
     descripcion:
       "Burbujas contra el calor, contra la sed, contra el aburrimiento. Si tus comidas llevan gaseosa, están listas para enfrentar lo que sea, elegila en tamaño regular, mediano o grande.",
-    precio: "$300",
+    precio: 300,
     popular: false,
     nuevo: true,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXJ8TBb/200/200/original?country=ar",
@@ -149,7 +149,7 @@ export const productos = [
     calorias: 0,
     descripcion:
       "La opción ideal para refrescar todas tus comidas.",
-    precio: "$250",
+    precio: 250,
     popular: true,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcX11dSt/200/200/original?country=ar",
@@ -161,7 +161,7 @@ export const productos = [
     calorias: 184,
     descripcion:
       "El helado para los que lo quieren todo. Para los que no se conforman con un sabor. Un helado que combina dulce de leche, vainilla y un delicioso cucurucho.",
-    precio: "$100",
+    precio: 100,
     popular: true,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$cono-combinado.png/200/200/original?country=ar",
@@ -173,7 +173,7 @@ export const productos = [
     calorias: 175,
     descripcion:
       "Un clásico cono que nunca pasa de moda. La opción que todos aman por su sabor, su dulce cucurucho y su estilo tan cool.",
-    precio: "$100",
+    precio: 100,
     popular: true,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$cono-de-vainilla.png/200/200/original?country=ar",
@@ -185,7 +185,7 @@ export const productos = [
     calorias: 264,
     descripcion:
       "La medida justa entre salsa de chocolate y helado de vainilla que pueden hacerte vivir una experiencia explosiva.",
-    precio: "$250",
+    precio: 250,
     popular: true,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$sundae-chocolate.png/200/200/original?country=ar",
@@ -197,7 +197,7 @@ export const productos = [
     calorias: 455,
     descripcion:
       "La crocante oblea de chocolate que todo el mundo conoce y ama, pero acompañada de un cremoso helado de vainilla y una deliciosa salsa tibia de chocolate. ¿Hace falta que te diga más? El break helado que esperabas.",
-    precio: "$490",
+    precio: 490,
     popular: false,
     nuevo: true,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXpFS9c/200/200/original?country=ar",
@@ -209,7 +209,7 @@ export const productos = [
     calorias: 424,
     descripcion:
       "Un helado de vainilla que se banca compartir el protagonismo con trocitos de deliciosas galletitas Oreo y la salsa que elijas. Amalo hasta el final.",
-    precio: "$490",
+    precio: 490,
     popular: false,
     nuevo: true,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcX83hlT/200/200/original?country=ar",
@@ -221,7 +221,7 @@ export const productos = [
     calorias: 0,
     descripcion:
       "Los mejores granos seleccionados para darle un sabor único a tu café. Como a vos te gusta. Como vos te merecés.",
-    precio: "$200",
+    precio: 200,
     popular: true,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$cafe-premium.png/200/200/original?country=ar",
@@ -233,7 +233,7 @@ export const productos = [
     calorias: 62,
     descripcion:
       "Un espresso doble con leche, espolvoreado con deliciosa canela y cacao, acompañado de una suave espuma.",
-    precio: "$240",
+    precio: 240,
     popular: false,
     nuevo: true,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$cappuccino-2.png/200/200/original?country=ar",
@@ -245,7 +245,7 @@ export const productos = [
     calorias: 67,
     descripcion:
       "Los mejores granos de café premium se mezclan con leche, dando un resultado cremoso para que tus sentidos se despierten con un sabor único.",
-    precio: "$240",
+    precio: 240,
     popular: false,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$cafe-com-leite.png/200/200/original?country=ar",
@@ -257,7 +257,7 @@ export const productos = [
     calorias: 131.9,
     descripcion:
       "Un clásico ideal para cualquier momento del día. Esponjosas y suaves por dentro; crocantes por fuera. Dulces o saladas, combinalas como quieras para acompañar un café, un frappé o hasta un rico té.",
-    precio: "$60",
+    precio: 60,
     popular: false,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXu65KW/200/200/original?country=ar",
@@ -269,7 +269,7 @@ export const productos = [
     calorias: 200,
     descripcion:
       "El sándwich único que todos conocemos, pero con un toque único. Un increíble tostado, con lomito y queso inmejorable para empezar tu día de la mejor manera.",
-    precio: "$290",
+    precio: 290,
     popular: true,
     nuevo: false,
     imagenCard: "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kcXv5fcb/200/200/original?country=ar",
