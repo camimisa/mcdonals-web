@@ -37,7 +37,7 @@ function App() {
             <img class="d-block w-100" src={imagen3} alt="Third slide" />
           </div>
         </div>
-
+{/* 
         <a
           class="carousel-control-prev"
           href="#carouselExampleIndicators"
@@ -46,8 +46,8 @@ function App() {
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
-        </a>
-        <a
+        </a> */}
+        {/* <a
           class="carousel-control-next"
           href="#carouselExampleIndicators"
           role="button"
@@ -55,7 +55,7 @@ function App() {
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a>
+        </a> */}
       </div>
     );
   };

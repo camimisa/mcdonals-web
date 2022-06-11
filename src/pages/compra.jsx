@@ -3,6 +3,8 @@ import Nav from "../components/nav.jsx";
 import Footer from "../components/footer.jsx";
 import SectionCompra from "../components/section/sectionCompra";
 
+
+
 function Compra() {
   return (
     <div className="div-nosotros">
@@ -15,6 +17,7 @@ function Compra() {
           <div className="container px-4 px-lg-5 mt-5">
             <SectionCompra />
           </div>
+          
         </section>
       </div>
       <Footer />

@@ -1,14 +1,25 @@
 import "../../styles.css";
 import { TraerInfoCarrito, GuardarCompra } from "../../utils/utils.jsx";
+// import CarritoForm from "../form/SectionForm";
+import { useNavigate } from "react-router-dom";
 import React from "react";
 
 function SectionCompra() {
-  var compra = {
-    cliente: "prueba",
-    total: 1000,
-    fecha: Date.now(),
-    medioDePago: "Tarjeta de debito",
-  };
+
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = `/formCarrito`; 
+    navigate(path);
+  }
+
+  // var compra = {
+  //   cliente: "prueba",
+  //   total: 1000,
+  //   fecha: Date.now(),
+  //   medioDePago: "Tarjeta de debito",
+  // };
+
+  // var compra = carritoForm();
 /*
 TODO: hacer un form para rellenar estos datos de arriba y que no esten hardcodeados.
 */
@@ -44,13 +55,18 @@ TODO: hacer un form para rellenar estos datos de arriba y que no esten hardcodea
       </div>
 
       <button
-        onClick={() => {
-          GuardarCompra(compra);
-          alert("TEST: Compra generada");
-        }}
+        onClick={routeChange}
+        // onClick={() => {
+          
+        //   // return(
+        //   //   <CarritoForm />
+        //   // )
+        //   // GuardarCompra(compra);
+        //   // alert("TEST: Compra generada");
+        // }}
         className="btn btn-outline-dark mt-auto"
       >
-        Finalizar compra
+        Siguiente
       </button>
     </div>
   );
