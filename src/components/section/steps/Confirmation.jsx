@@ -1,10 +1,10 @@
 import React from 'react'
 import { Container, Grid, List, ListItem, ListItemText, Button } from '@material-ui/core'
-import { GuardarCompra } from "../../../utils/utils";
-
+import { GuardarCompra, EliminarCarrito } from "../../../utils/utils";
+import { useNavigate } from "react-router-dom";
 
 const Confirmation = ({ prevStep, nextStep, values }) => {
-
+  let navigate = useNavigate();
   console.log(values);
   const {cliente, medioDePago} = values
   const Continue = e => {
@@ -47,6 +47,8 @@ const Confirmation = ({ prevStep, nextStep, values }) => {
               onClick={() => {
                   GuardarCompra(values);
                   alert("TEST: Compra generada");
+                  EliminarCarrito();
+                  navigate("/");
               }}
               fullWidth
               variant="contained"

@@ -25,6 +25,7 @@ function SectionInfo() {
                 <a target="_blank" className="btn btn-outline-dark mt-auto" href="https://es-la.facebook.com/McDonaldsArgentina/">
                     Facebook
                 </a>
+                <a target="_blank" className="btn btn-outline-dark mt-2" href="mailto:mcdonals@correo.com">Hace click aqui para mandarnos un email!</a>
                 </div>
             </div>
             </div>

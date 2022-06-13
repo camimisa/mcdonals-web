@@ -107,7 +107,7 @@ export const agregarProductoCarrito = (producto) => {
 export const TraerInfoCarrito = () => {
   return JSON.parse(localStorage.getItem("carrito"));
 };
-
+export const EliminarCarrito = () => localStorage.removeItem("carrito");
 export const EliminarProductoCarrito = (id) => {
   var carritoActual = JSON.parse(localStorage.getItem("carrito"));
   if (carritoActual.listaProductos.length === 1) {
