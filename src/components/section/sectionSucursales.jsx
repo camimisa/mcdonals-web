@@ -1,7 +1,9 @@
 import "../../styles.css";
 import { sucursales } from "../../api/datos.jsx";
+import { obtenerSucursalMasCercana } from "../../utils/utils.jsx";
 import "font-awesome/css/font-awesome.min.css";
 import React from "react";
+
 class SectionSucursales extends React.Component {
   constructor() {
     super();
@@ -12,7 +14,7 @@ class SectionSucursales extends React.Component {
     this.position = {};
   }
   actualizarSucursales = () => {
-    var lista = obtenerSucursalMasCercana(this.position);
+    var lista = obtenerSucursalMasCercana(this.position, sucursales);
     this.setState({ listaSucursales: lista, titulo: "Sucusales mas cercanas" });
   };
   componentDidMount() {
@@ -67,52 +69,6 @@ class SectionSucursales extends React.Component {
     );
   }
 }
-// Metodos para obtener la sucursal mas cercana
-function obtenerSucursalMasCercana(pos) {
-  var listaSucursales = [];
-  var crd = pos.coords;
-  if (crd === undefined) {
-    return null;
-  }
-  var datos = {
-    latitud: crd.latitude,
-    longitud: crd.longitude,
-  };
-  for (var i = 0; i < sucursales.length; i++) {
-    if (
-      parseInt(
-        getKilometros(
-          datos.latitud,
-          datos.longitud,
-          sucursales[i].latitud,
-          sucursales[i].longitud
-        )
-      ) <= 5
-    ) {
-      listaSucursales.push(sucursales[i]);
-    }
-  }
-  // TODO: Se buscan bien las sucusales, despues hay que ver como mostrarlas
-  // Probablemente haya que transformar esto en una clase y asignar la lista como un estado
-  return listaSucursales;
-}
-function getKilometros(lat1, lon1, lat2, lon2) {
-  var R = 6378.137; //Radio de la tierra en km
-  var dLat = rad(lat2 - lat1);
-  var dLong = rad(lon2 - lon1);
-  var a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(rad(lat1)) *
-      Math.cos(rad(lat2)) *
-      Math.sin(dLong / 2) *
-      Math.sin(dLong / 2);
-  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  var d = R * c;
-  return d.toFixed(3); //Retorna tres decimales
-}
-function rad(x) {
-  return (x * Math.PI) / 180;
-}
-// Fin metodos obtener sucursal mas cercana
+
 
 export default SectionSucursales;

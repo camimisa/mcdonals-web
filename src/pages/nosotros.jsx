@@ -7,7 +7,7 @@ function Nosotros() {
   
   return (    
     <div className="div-nosotros">
-      <Nav />(
+      <Nav />
       <h1 className="display-3" style={{textAlign: 'center'}}>Nosotros</h1>
       <div className="div-section">
         <section className="py-5">
