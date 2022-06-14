@@ -16,7 +16,9 @@ class SectionCarrito extends React.Component {
   }
   render() {
     const objeto = TraerInfoCarrito();
-    const content = objeto.listaProductos.map((item) => (
+    var content
+    if(objeto!= null){
+    content = objeto.listaProductos.map((item) => (
       <tr key={item.idProducto}>
         <td>{item.nombreProducto}</td>
         <td>{item.precio}</td>
@@ -62,7 +64,7 @@ class SectionCarrito extends React.Component {
           </button>
         </td>
       </tr>
-    ));
+    ))};
     console.log(objeto);
     return (
       <div className="div-carrito">
@@ -82,7 +84,7 @@ class SectionCarrito extends React.Component {
               {content}
               <tr>
                 <td colspan="4">Total</td>
-                <td colspan="2">${objeto.total}</td>
+                <td colspan="2">${objeto != null ? objeto.total : 0}</td>
               </tr>
             </tbody>
           </table>
