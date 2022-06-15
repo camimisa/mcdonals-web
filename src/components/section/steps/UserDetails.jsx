@@ -1,15 +1,10 @@
 import React from 'react'
 // import { makeStyles } from '@material-ui/core/styles';
-import { Container, Typography, Grid, TextField, Button,Select,MenuItem } from '@material-ui/core'
+import { Container, Grid, TextField, Button,Select,MenuItem } from '@material-ui/core'
 import { sucursales } from "../../../api/datos.jsx";
 
 const UserDetails = ({ nextStep, handleChange, values }) => {
-  const content = sucursales.map((item) => (
-    <div key={item.id}>
-      <MenuItem value={item.nombre}>{item.nombre}</MenuItem>
-    </div>
-  ));
-  // for continue event listener
+
   const Continue = e => {
     e.preventDefault();
     nextStep();
@@ -67,7 +62,9 @@ const UserDetails = ({ nextStep, handleChange, values }) => {
                   autoComplete="sucursal"
                   style = {{width: '300px'}}
                 >
-                  {content}
+                  {sucursales.map((item) => (
+                  <MenuItem value={item.nombre}>{item.nombre}</MenuItem>
+                  ))}
                   </Select>
               </Grid>
               <br />
