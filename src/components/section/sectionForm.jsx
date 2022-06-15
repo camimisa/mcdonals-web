@@ -10,6 +10,7 @@ export default class SectionForm extends Component {
     cliente: '',
     fecha: Date.now(),
     medioDePago: '', 
+    sucursal: '',
   }
 
   // cliente: "prueba",
@@ -31,13 +32,14 @@ export default class SectionForm extends Component {
 
   // Handle fields change
   handleChange = input => e => {
+    console.log(input + " " + e.target.value + " e " + e.target)
     this.setState({ [input]: e.target.value });
   }
 
   render() {
     const { step } = this.state;
-    const { cliente, medioDePago } = this.state;
-    const values = { cliente, medioDePago }
+    const { cliente, medioDePago, sucursal } = this.state;
+    const values = { cliente, medioDePago, sucursal}
     
     switch(step) {
       case 1: 

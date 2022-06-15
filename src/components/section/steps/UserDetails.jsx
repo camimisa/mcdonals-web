@@ -1,9 +1,14 @@
 import React from 'react'
 // import { makeStyles } from '@material-ui/core/styles';
 import { Container, Typography, Grid, TextField, Button,Select,MenuItem } from '@material-ui/core'
+import { sucursales } from "../../../api/datos.jsx";
 
 const UserDetails = ({ nextStep, handleChange, values }) => {
-  
+  const content = sucursales.map((item) => (
+    <div key={item.id}>
+      <MenuItem value={item.nombre}>{item.nombre}</MenuItem>
+    </div>
+  ));
   // for continue event listener
   const Continue = e => {
     e.preventDefault();
@@ -48,32 +53,24 @@ const UserDetails = ({ nextStep, handleChange, values }) => {
                   <MenuItem value={'Efectivo'}>Efectivo</MenuItem>
                   </Select>
 
-              
-                  
-                {/* <TextField 
-                  placeholder="Medio de Pago"
-                  label="medioDePago"
-                  onChange={handleChange('medioDePago')}
-                  defaultValue={values.medioDePago}
-                  // variant="outlined"
-                  autoComplete="medioDePago"
-                  fullWidth
-                /> */}
+
               </Grid>
               <br />
-              {/* password */}
-              {/* <Grid item xs={12}>
-                <TextField 
-                  placeholder="Password"
-                  label="Password"
-                  onChange={handleChange('password')}
-                  defaultValue={values.password}
-                  // variant="outlined"
-                  autoComplete="password"
-                  fullWidth
-                  type="password"
-                /> */}
-              {/* </Grid> */}
+              {/* Sucursal */}
+              <Grid item xs={12}>
+                <div>Sucursal:</div>
+                <Select
+                  // placeholder="Medio de Pago"
+                  value={values.sucursal}
+                  label="sucursal"
+                  onChange={handleChange('sucursal')}
+                  autoComplete="sucursal"
+                  style = {{width: '300px'}}
+                >
+                  {content}
+                  </Select>
+              </Grid>
+              <br />
           </Grid>
           <br />
           <Button 
