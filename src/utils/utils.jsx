@@ -56,6 +56,8 @@ export const GuardarCompra = (compra) => {
     total: compra.total,
     fecha: compra.fecha,
     medioDePago: compra.medioDePago,
+    sucursal: compra.sucursal,
+
   };
   var compraActual = JSON.parse(localStorage.getItem("compras"));
   var compraNuevo = {};

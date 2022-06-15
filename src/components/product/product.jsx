@@ -37,6 +37,7 @@ function Product() {
                 <span>${producto.precio}</span>
               </div>
               <p className="lead">{producto.descripcion}</p>
+              <p className="lead">Calorias: {producto.calorias}</p>
               <div className="d-flex">
                 <button
                   className="btn btn-outline-dark flex-shrink-0"

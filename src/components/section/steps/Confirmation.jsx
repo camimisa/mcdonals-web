@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Confirmation = ({ prevStep, nextStep, values }) => {
   let navigate = useNavigate();
   console.log(values);
-  const {cliente, medioDePago} = values
+  const {cliente, medioDePago, sucursal} = values
   const Continue = e => {
     e.preventDefault();
     nextStep();
@@ -26,6 +26,9 @@ const Confirmation = ({ prevStep, nextStep, values }) => {
           </ListItem>
           <ListItem>
             <ListItemText primary="Medio de Pago" secondary={medioDePago}/>
+          </ListItem>
+          <ListItem>
+            <ListItemText primary="Sucursal" secondary={sucursal}/>
           </ListItem>
         </List>
 
