@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import UserDetails from './steps/UserDetails'
 import Confirmation from './steps/Confirmation'
-import Success from './steps/Success'
+
 
 export default class SectionForm extends Component {
 
